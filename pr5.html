@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pr5.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration form</h2>
+        <form action="">
+            <lable class="name">Enter Name</lable>
+            <input type="text" placeholder="Enter Your Fullname" name="fname" required pattern="[a-z,A-Z]{1,20}"
+                autofocus maxlength="20">
+            <br>
+            <br>
+            <lable class="name">Enter Email Id</lable> <input type="email" placeholder="Enter Your Email" name="email"
+                required>
+            <br>
+            <br>
+            <lable class="name">Enter Mobile No</lable> <input type="tel" placeholder="Enter Your Phone No" name="phone"
+                required pattern="[0-9]{10}" maxlength="10">
+            <br>
+            <br>
+            <label>Your Age</label> <input type="number" placeholder="Enter Your Age">
+            <br><br>
+            <label>Gender:&nbsp;&nbsp;<input type="radio" name="gender" value="male" checked><span>Male</span>
+                &nbsp;&nbsp;<input type="radio" name="gender" value="female" checked><span>Female</span>
+            </label>
+            <br><br>
+            <label>Language Known:&nbsp;&nbsp;<input type="checkbox" name="chk1" value="english">English
+                &nbsp;&nbsp;<input type="checkbox" name="chk2" value="hindi">Hindi
+                &nbsp;&nbsp;<input type="checkbox" name="chk3" value="marathi">Marathi
+            </label>
+
+            <br><br>
+            <label>Select City:</label>
+            <select>
+                <option>Mumbai</option>
+                <option>Pune</option>
+                <option>Surat</option>
+                <option>UP</option>
+                <option>Delhi</option>
+            </select>
+            <br><br>
+            <label>Select Date:<input type="date" name="time"></label>
+            <br><br>
+            <label>Select Date Time:<input type="datetime-local" name="datetime"></label>
+            <br><br>
+            <label>Attach File:<input type="file" name="file" id="file" multiple></label>
+            <br><br>
+            <label><textarea cols="25" rows="5">Write message here...</textarea></label>
+            <br><br>
+            <input type="submit" value="submit Data">
+        </form>
+    </div>
+</body>
+
+</html>
